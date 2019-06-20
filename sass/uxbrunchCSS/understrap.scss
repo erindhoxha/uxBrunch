@@ -1,0 +1,298 @@
+
+$brandColor: #92ffd7;
+$bgColor: #fcfcfc;
+.active-first {
+  background-color:$brandColor;
+  border:none !important;
+}
+.active {
+  box-shadow: inset 0 -5px 0 $brandColor;
+  border:none !important;
+}
+fieldset {
+  padding-left:0px !important;
+}
+.woocommerce-form-row {
+  input {
+    border:1px solid #ebebeb;
+    border-radius:5px;
+    text-indent:10px;
+    height:45px;
+  }
+  label {
+    font-family:'Titillium Web';
+    font-size:18px !important;
+  }
+}
+body {
+  font-family:'Titillium Web';
+  background-color:$bgColor;
+}
+body.custom-background {
+  background-attachment: initial !important;
+}
+// Some basic padding for all wrappers
+.wrapper {
+  padding: $grid-gutter-width 0; }
+
+// Reset hero wrapper padding to 0
+#wrapper-hero { padding: 0px !important; }
+
+// Adding basic WordPress classes to pass the WordPress.org tests
+.sticky,
+.gallery-caption,
+.bypostauthor {
+  font-size: inherit;
+}
+p {
+  margin-bottom:10px !important;
+}
+// Separate sticky wrapper from main content
+.wrapper#wrapper-sticky { border-bottom: 1px solid $gray-300; }
+
+// Adding some contrast background color to footer full widget
+#wrapper-footer-full,
+#wrapper-static-hero { background-color: $gray-200; }
+
+// Necessary WP classes
+.wp-caption { font-size: inherit; }
+
+.wp-caption-text { font-size: inherit; }
+
+.screen-reader-text { @extend .sr-only; }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter { @extend .mx-auto; }
+
+// Post design
+.entry-footer span { padding-right: 10px; }
+
+// Limit featured image size to 100%
+img.wp-post-image,
+article img,
+figure,
+img,
+#secondary img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Skip to content link
+a.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  right: 0px;
+}
+
+// Reset Jumbotron default margin
+.jumbotron { margin-bottom: 0px; }
+
+// Dropdown translation
+.navbar-dark .navbar-nav .dropdown-menu .nav-link{
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+  clear: both;
+  font-weight: $font-weight-normal;
+  color: $dropdown-link-color !important;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background: none; // For `<button>`s
+  border: 0; // For `<button>`s
+}
+
+.navbar-light .navbar-brand a {
+     color: $navbar-light-active-color;
+
+}
+
+.navbar-dark .navbar-brand a {
+    color: $navbar-dark-active-color;
+
+}
+#main-menu2 {
+  .menu-item-has-children {
+    background-color:$brandColor;
+    color:black !important;
+    border-radius:0px !important;
+    a:first-child {
+      color:black !important;
+    }
+  }
+}
+
+.navbar h1, .navbar-brand { font-weight: $font-weight-bold; background-color:$brandColor; padding:5px 10px; border-radius:5px;}
+
+  .secondary-nav {
+    .dropdown-menu {
+      padding:10px;
+      position:absolute;
+      transition:0.5s ease-in-out;
+    }
+    li {
+      .dropdown-item {
+        background-color:$brandColor;
+        margin-bottom:5px;
+        border-radius:5px;
+        padding:5px;
+      }
+    }
+
+  }
+  .btn-search {
+    background-color:$brandColor;
+  }
+  .form-control {
+    &:active, &:focus {
+      outline:0;
+      outline:0px;
+      outline:none;
+      border:none;
+    }
+  }
+  .container.navigation.post-navigation {
+    margin-top:50px;
+    margin-bottom:50px;
+    .nav-previous, .nav-next {
+      background-color:$brandColor;
+      color:black;
+      a {
+        color:black;
+      }
+    }
+  }
+  .comment-metadata {
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+.date-erindsblog {
+  background-color:$brandColor;
+  color:black;
+}
+a {
+  color:black;
+  &:hover {
+    color:black;
+    text-decoration: none;
+  }
+}
+.secondary-nav {
+  li {
+    a {
+      padding-left:5px !important;
+    }
+  }
+}
+  .secondary-nav > :first-child {
+    border-radius:50px;
+    font-weight:600;
+    li {
+      color:black;
+    }
+  }
+  li {
+    list-style-type:none;
+  }
+
+#right-sidebar {
+  aside {
+    text-align:right;
+  }
+  img {
+    width:200px;
+    margin-left:auto;
+  }
+}
+.tertiary-nav {
+  .courses {
+    li:hover {
+      background-color:$brandColor;
+      border:1px solid $brandColor;
+      color:black;
+    }
+      li {
+        margin-bottom:5px;
+        a {
+          padding:0px;
+        }
+      transition:0.3s ease;
+        font-size:15px;
+        color:rgb(0, 0, 0);
+        padding:5px 8px;
+        margin-right:20px;
+        border:1px solid rgb(99, 99, 99);
+      }
+  }
+}
+.badges-container {
+  span {
+    cursor:default;
+    margin-right:5px;
+    font-size:13px;
+  }
+  a {
+    color:white;
+  }
+}
+.entry-title-index {
+  a {
+  color:black;
+  text-decoration: none;
+  }
+}
+.erinds-blog-read-more-link {
+  background-color:$brandColor;
+  color:black;
+  &:hover {
+    background-color:$brandColor;
+    color:black;
+  }
+}
+.JS {
+  background-color:#f9e128;
+  color:black;
+}
+.UX {
+  background-color:black;
+  color:white;
+}
+.UI {
+  background-color:#5effc5;
+  color:black;
+}
+
+// PAGINATION
+
+.pagination-nav {
+  width:100%;
+  ul {
+    width:200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav.social {
+    li {
+      padding:10px;
+      font-size:30px;
+    }
+    margin-top:30px;
+    border-top:1px solid #ebebeb;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

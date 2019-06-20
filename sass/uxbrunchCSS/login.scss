@@ -1,0 +1,55 @@
+.um-page-login, .um-page-register, .woocommerce-account {
+	.entry-title {
+		border-bottom:5px solid $brandColor;
+		text-align:left;
+		padding-bottom:5px;
+		width:max-content;
+		margin:0 auto;
+	}
+}
+.woocommerce-account.logged-in {
+	.entry-title {
+		border-bottom:none !important;
+		text-align:left;
+		padding-bottom:5px;
+		width:max-content;
+		margin:0px !important;
+		padding-bottom:20px;
+		padding-left:10px;
+}
+}
+
+
+.um-form {
+	form {
+		input#um-submit-btn {
+			font-family:'Titillium Web';
+			background-color:$brandColor !important;
+			font-weight:700;
+			color:black;
+		}
+	}
+}
+.woocommerce-account {
+	.woocommerce {
+		h2 {
+			margin:0 auto;
+			text-align:center;
+			margin-top:30px;
+		}
+	}
+}
+.woocommerce-form.woocommerce-form-login.login {
+	p, label, input, button, span {
+		font-size:16px !important;
+	}
+}
+.woocommerce-button.woocommerce-form-login__submit {
+	background-color:$brandColor !important;
+	width:300px;
+	float:right;
+	margin-left:auto;
+}
+.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+	width:100%;
+}
